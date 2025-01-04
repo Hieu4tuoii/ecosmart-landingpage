@@ -184,6 +184,7 @@ export default function LandingPage() {
   transition={{ duration: 1, delay: 0.2 }}
 >
   <Image
+  alt=''
     src="https://media.canva.com/v2/image-resize/format:PNG/height:900/quality:100/uri:s3%3A%2F%2Fmedia-private.canva.com%2FFHKzk%2FMAGa7dFHKzk%2F1%2Fp.png/watermark:F/width:1600?csig=AAAAAAAAAAAAAAAAAAAAANcdP8idSE5SvG9Kmx8WFqvQDBx8TgSHV321nBX-d2cC&exp=1736027535&osig=AAAAAAAAAAAAAAAAAAAAAB_Kwis9j-bf0ebTCpssNrtq7wiw1JurZy5VbJNjBNp9&signer=media-rpc&x-canva-quality=screen_2x"
     width={600}
     height={400}
@@ -338,7 +339,6 @@ export default function LandingPage() {
                 >
                   <p className="text-gray-600 mb-4">"{testimonial.quote}"</p>
                   <div className="flex items-center">
-                    <Image src="" alt={testimonial.name} width={50} height={50} className="rounded-full mr-4" />
                     <div>
                       <div className="font-semibold">{testimonial.name}</div>
                       <div className="text-gray-500">{testimonial.title}</div>
