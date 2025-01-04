@@ -7,12 +7,12 @@ import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Leaf, Recycle, Award, Smartphone, ChevronDown, Check, ArrowRight, Users } from 'lucide-react'
 
-const CountUp = ({ end, duration = 3000 }) => {
+const CountUp: React.FC<{ end: number; duration?: number }> = ({ end, duration = 3000 }) => {
   const [count, setCount] = useState(0)
 
   useEffect(() => {
-    let startTime = null
-    const animate = (timestamp) => {
+    let startTime: any = null
+    const animate = (timestamp: any) => {
       if (!startTime) startTime = timestamp
       const progress = timestamp - startTime
       const percentage = Math.min(progress / duration, 1)
@@ -27,7 +27,7 @@ const CountUp = ({ end, duration = 3000 }) => {
   return <span>{count}</span>
 }
 
-const FadeInWhenVisible = ({ children }) => {
+const FadeInWhenVisible: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const controls = useAnimation()
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -57,7 +57,7 @@ const FadeInWhenVisible = ({ children }) => {
 }
 
 export default function LandingPage() {
-  function removeVietnameseTones(str) {
+  function removeVietnameseTones(str: string) {
   return str
     .normalize('NFD') // Tách dấu khỏi chữ cái
     .replace(/[\u0300-\u036f]/g, '') // Loại bỏ dấu
@@ -67,7 +67,7 @@ export default function LandingPage() {
     .replace(/\s+/g, '-') // Thay khoảng trắng bằng dấu '-'
     .toLowerCase(); // Chuyển về chữ thường
 }
-  const scrollToSection = (id) => {
+  const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth", block: "start" });
