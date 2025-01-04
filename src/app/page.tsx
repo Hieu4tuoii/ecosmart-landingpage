@@ -322,9 +322,9 @@ export default function LandingPage() {
           </FadeInWhenVisible>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { quote: "EcoSmart có tiềm năng to lớn trong việc thay đổi cách chúng ta nhìn nhận và xử lý rác thải. Đây là một bước tiến quan trọng hướng tới tương lai bền vững.", name: "Nhà báo Dương Ngọc Trinh", title: "Chuyên gia Môi trường" },
-              { quote: "Ý tưởng kết hợp công nghệ AI với tái chế là vô cùng sáng tạo. EcoSmart có thể tạo ra một cuộc cách mạng trong quản lý rác thải đô thị.", name: "Đào Việt Anh - Chuyên gia Microsoft", title: "Kỹ sư Công nghệ Môi trường" },
-              { quote: "Hệ thống phần thưởng của EcoSmart là một cách thông minh để khuyến khích người dân tham gia tái chế. Đây có thể là chìa khóa để thay đổi thói quen của cộng đồng.", name: "Phạm Ngọc Anh - Hiệp hội doanh nghiệp Châu Âu tại VN", title: "Nhà nghiên cứu Hành vi Người tiêu dùng" }
+              { quote: "EcoSmart có tiềm năng to lớn trong việc thay đổi cách chúng ta nhìn nhận và xử lý rác thải. Đây là một bước tiến quan trọng hướng tới tương lai bền vững.", name: "Nhà báo Dương Ngọc Trinh", title: "" },
+              { quote: "Ý tưởng kết hợp công nghệ AI với tái chế là vô cùng sáng tạo. EcoSmart có thể tạo ra một cuộc cách mạng trong quản lý rác thải đô thị.", name: "Đào Việt Anh - Chuyên gia Microsoft", title: "" },
+              { quote: "Hệ thống phần thưởng của EcoSmart là một cách thông minh để khuyến khích người dân tham gia tái chế. Đây có thể là chìa khóa để thay đổi thói quen của cộng đồng.", name: "Phạm Ngọc Anh - Hiệp hội doanh nghiệp Châu Âu tại VN", title: "" }
             ].map((testimonial, index) => (
               <FadeInWhenVisible key={index}>
                 <motion.div 
