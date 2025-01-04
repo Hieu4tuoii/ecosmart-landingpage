@@ -78,11 +78,6 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white overflow-hidden">
       {/* Header giữ nguyên */}
-      <Head>
-        <title>EcoSmart</title>
-        <meta name="description" content="Mô tả ngắn về trang của bạn" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <header className="bg-blue-600 text-white sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <motion.div 
